@@ -4,8 +4,8 @@ class C_Square :
     public C_Rectangle
 {
 public:
-    C_Square(double positionX, double positionY, double sq, char simb, double size) :
-        C_Rectangle(positionX, positionY, sq, simb, size, size) {
+    C_Square(double age, double weight, double height, char name, double size) :
+        C_Rectangle(age, weight, height, name, size, size) {
 
     }
 };

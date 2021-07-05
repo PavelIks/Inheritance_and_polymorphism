@@ -139,15 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C_Circle.cpp" />
-    <ClCompile Include="C_Figure.cpp" />
+    <ClCompile Include="C_Bacteria.cpp" />
+    <ClCompile Include="C_Wildlife_Kingdom.cpp" />
     <ClCompile Include="C_Rectangle.cpp" />
     <ClCompile Include="C_Square.cpp" />
     <ClCompile Include="task_step.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C_Circle.h" />
-    <ClInclude Include="C_Figure.h" />
+    <ClInclude Include="C_Bacteria.h" />
+    <ClInclude Include="C_Wildlife_Kingdom.h" />
     <ClInclude Include="C_Rectangle.h" />
     <ClInclude Include="C_Square.h" />
   </ItemGroup>
