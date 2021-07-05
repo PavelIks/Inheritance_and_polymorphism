@@ -4,23 +4,25 @@ class C_Bacteria :
 	public C_Wildlife_Kingdom
 {
 protected:
-	double radius;
+	char* metabolism;
 public:
 	//вызвали конструктор по-умолчанию родителя
 	C_Bacteria() : C_Wildlife_Kingdom()
 	{
-		this->radius = 0.0;
+		this->metabolism = (char*)"Фототрофы, Литотрофы, Органотрофы";
 	}
 	//вызвали конструктор парамметрический родителя
-	C_Bacteria(double age, double weight, double height, char name, double radius)
-		: C_Wildlife_Kingdom(age, weight, height, name)
+	C_Bacteria
+	(double age, double weight, double height, char* name, char* metabolism)
+		: C_Wildlife_Kingdom
+	(age, weight, height, name)
 	{
-		this->radius = radius;
+		this->metabolism = metabolism;
 	}
 
-	friend std::ostream& operator << (std::ostream& out, const C_Bacteria& figure)
+	friend std::ostream& operator << (std::ostream& out, const C_Bacteria& bacteria)
 	{
-		out << ((C_Wildlife_Kingdom)figure) << " radius: " << figure.radius << " ";
+		out << ((C_Wildlife_Kingdom)bacteria) << "Тип питания бактерии: " << bacteria.metabolism << " ";
 		return out;
 	}
 

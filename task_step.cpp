@@ -7,6 +7,10 @@
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    C_Wildlife_Kingdom wk = C_Wildlife_Kingdom(1, 2, 3, 'a');
-    std::cout << wk << "\n";
+
+    C_Wildlife_Kingdom wk1 = C_Wildlife_Kingdom(1, 2, 3, (char*)"blen");
+    std::cout << wk1 << "\n";
+
+    C_Bacteria b1 = C_Bacteria(NULL, NULL, NULL, (char*)"Bacillus", (char*)"Органотрофы");
+    std::cout << b1 << "\n";
 }

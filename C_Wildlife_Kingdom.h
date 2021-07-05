@@ -7,15 +7,15 @@ protected:
 	double age;
 	double weight;
 	double height;
-	char name;
+	char* name;
 public:
 	C_Wildlife_Kingdom()
 	{
 		this->age = this->weight = 0.0;
 		this->height = 0.0;
-		this->name = 'A';
+		this->name = (char*)"A";
 	}
-	C_Wildlife_Kingdom(double age, double weight, double height, char name)
+	C_Wildlife_Kingdom(double age, double weight, double height, char* name)
 	{
 		this->age = age;
 		this->weight = weight;
@@ -36,4 +36,3 @@ public:
 		return out;
 	}
 };
-
